@@ -1,0 +1,122 @@
+.root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+.headerLeft, .headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.logoMark {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.95), rgba(34, 211, 238, 0.85));
+}
+
+.roomBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.roomId {
+  font-family: var(--font-mono);
+  letter-spacing: 0.12em;
+  font-size: 12px;
+}
+
+.copyBtn {
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+}
+.dotGreen { background: #22c55e; }
+.dotRed { background: #ef4444; }
+
+.connStatus, .participantCount {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.grid {
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+  align-content: stretch;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.grid1 { grid-template-columns: 1fr; grid-template-rows: 1fr; }
+.grid2 { grid-template-columns: repeat(2, 1fr); }
+.grid3 { grid-template-columns: repeat(3, 1fr); }
+.grid4 { grid-template-columns: repeat(2, 1fr); }
+.grid5 { grid-template-columns: repeat(3, 1fr); }
+.grid6 { grid-template-columns: repeat(3, 1fr); }
+
+.footer {
+  padding: 14px;
+}
+
+.error {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.errorBox {
+  width: min(520px, 100%);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.errorBox button {
+  margin-top: 10px;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.10);
+  color: var(--text);
+}
+
